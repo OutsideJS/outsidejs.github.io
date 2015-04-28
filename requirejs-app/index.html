@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>OutsideJS: </title>
+    <style>
+        body {
+            background : #efefef;
+        }
+
+        .body-bg {
+            position : absolute;
+            top      : 0;
+            left     : 0;
+            width    : 100%;
+            height   : 100%;
+            z-index  : 1;
+        }
+
+        .body-bg .cover {
+            width             : 100%;
+            height            : 100%;
+            background-size   : cover !important;
+            background-repeat : no-repeat !important;
+            position          : absolute;
+            top               : 0;
+            left              : 0;
+            background : url("./images/bg-cover.jpg");
+        }
+    </style>
+</head>
+<body>
+    <div class="body-bg"><div class="cover"></div></div>
+    <div id="outsidejs-app-holder"></div>
+    <script>
+        (function (o, u, t, s, i, d, e) {
+            o['OutsideJsObject'] = i;
+            o[i] = o[i] || function () {
+                (o[i].q = o[i].q || []).push(arguments)
+            }, o[i].l = 1 * new Date();
+            d = u.createElement(t), e = u.getElementsByTagName(t)[0];
+            d.async = 1;
+            d.src = s;
+            e.parentNode.insertBefore(d, e)
+        })(window, document, 'script', '../js/outside.js', 'OutsideJS');
+    
+        OutsideJS('init', 
+            "//outsidejs.github.io/js/requirejs_app/common.js",
+            {viewElem: "#outsidejs-app-holder", vkAppId: 4778031},
+            function () {
+                console.log('common.js loaded!!!');
+            }
+        );
+    </script>
+</body>
+</html>

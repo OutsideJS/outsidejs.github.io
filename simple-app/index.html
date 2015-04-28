@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>OutsideJS: Simple app example</title>
+</head>
+<body>
+<script>
+    (function (o, u, t, s, i, d, e) {
+        o['OutsideJsObject'] = i;
+        o[i] = o[i] || function () {
+            (o[i].q = o[i].q || []).push(arguments)
+        }, o[i].l = 1 * new Date();
+        d = u.createElement(t), e = u.getElementsByTagName(t)[0];
+        d.async = 1;
+        d.src = s;
+        e.parentNode.insertBefore(d, e)
+    })(window, document, 'script', '../js/outside.js', 'OutsideJS');
+
+    OutsideJS('init', "//outsidejs.github.io/js/simple_app/common.js", {text: "Hello, world!!!"}, function () {
+        console.log('common.js loaded!!!');
+    });
+</script>
+</body>
+</html>

@@ -1,2 +1,2 @@
-# outsidejs.github.io
+# OutsideJS Examples Site
 OutsideJS for load outside js app
