@@ -12,7 +12,7 @@
       var div = document.createElement('div');
       div.innerHTML = '' +
         '<style>' +
-        ' #ads-widget-'+params.key+' > .widget-header-'+params.key+'{' +
+        ' #ads-widget-'+params.key+' .widget-header-'+params.key+'{' +
         '   color: red;' +
         '}' +
         '</style>' +
