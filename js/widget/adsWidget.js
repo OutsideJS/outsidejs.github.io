@@ -10,7 +10,13 @@
 
     if(adsHolder){
       var div = document.createElement('div');
-      div.innerHTML = "<h1>Привет!</h1>";
+      div.innerHTML = '' +
+        '<style>' +
+        ' #ads-widget-'+params.key+' > .widget-header-'+params.key+'{' +
+        '   color: red;' +
+        '}' +
+        '</style>' +
+        '<div class="widget-header-'+params.key+'">Привет!</div>';
       adsHolder.appendChild(div);
     } else {
       console.warn('Element with id="%s" not found!!!', params.key);
