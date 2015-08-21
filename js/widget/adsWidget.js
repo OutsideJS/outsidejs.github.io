@@ -10,7 +10,7 @@
 
     if(adsHolder){
       var div = document.createElement('div');
-      div.innerHTML = "<h1>Привет!</h1>";
+      div.innerHTML = "<h1>РџСЂРёРІРµС‚!</h1>";
       adsHolder.appendChild(div);
     } else {
       console.warn('Element with id="%s" not found!!!', params.key);
