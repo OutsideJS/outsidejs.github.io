@@ -76,9 +76,9 @@
             d.async = 1;
             d.src = s;
             e.parentNode.insertBefore(d, e)
-        })(window, document, 'script', '/js/outside.js', 'OutsideJS');
+        })(window, document, 'script', './js/outside.js', 'OutsideJS');
 
-        OutsideJS('init', "//outsidejs.github.io/js/widget/adsWidget.js", {key: "5648-4565-1564-1231"}, function () {
+        OutsideJS('init', "./js/widget/adsWidget.js", {debug: true, key: "5648-4565-1564-1231"}, function () {
             console.log('Script загружен!!!');
         });
     </script>
