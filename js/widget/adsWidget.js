@@ -14,7 +14,7 @@
         '<style>' +
         '#ads-widget-'+params.key+' {' +
         ' -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;' +
-        ' border:1px solid #369; border-radius: 6px; padding: 5px;' +
+        ' border:1px solid #369; border-radius: 6px; padding: 5px; height: 150px;' +
         '}' +
         ' #ads-widget-'+params.key+' .widget-header-'+params.key+'{' +
         '   color: red;' +
