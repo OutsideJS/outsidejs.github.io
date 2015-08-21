@@ -9,8 +9,8 @@
 
     var $holder = document.querySelector('#ads-widget-' + params.key);
     if($holder){
-      OutsideJS.loadCss('../../js/widget/products.css');
-      OutsideJS.fetch('../../js/widget/data.json', null, function(data){
+      OutsideJS.loadCss('//outsidejs.github.io/js/widget/products.css');
+      OutsideJS.fetch('//outsidejs.github.io/js/widget/data.json', null, function(data){
         var response = JSON.parse(data);
         for(var i = 0; i < response.products.length; i++) {
           var item = response.products[i];
